@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الإلكترونيات الذكية</title>
+    <style>
+        /* التنسيق العام للموقع */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121214;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; /* تجعل التنقل بين الأقسام ناعماً وسلساً */
+            padding-bottom: 70px; /* مسافة إضافية في الأسفل لكي لا يغطي شريط الاسم على المحتوى */
+        }
+        
+        /* القائمة العلوية الثابتة للتنقل */
+        nav {
+            background-color: #1a1a1e;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #00d2d3;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #00d2d3;
+        }
+
+        /* واجهة الترحيب الرئيسية */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e1e24, #0a0a0c);
+            border-bottom: 1px solid #2d2d35;
+        }
+        .hero h1 {
+            font-size: 32px;
+            color: #00d2d3;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 16px;
+            color: #cccccc;
+        }
+        .btn-explore {
+            display: inline-block;
+            background-color: #00d2d3;
+            color: #121214;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-explore:hover {
+            background-color: #01a3a4;
+        }
+
+        /* الأقسام العامة للموقع */
+        .section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1a1a1e;
+            border-radius: 12px;
+            border: 1px solid #2d2d35;
+        }
+        .section h2 {
+            text-align: center;
+            color: #00d2d3;
+            margin-bottom: 25px;
+        }
+
+        /* شبكة عرض الأجهزة الإلكترونية */
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+        }
+        .card {
+            background-color: #121214;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 450px;
+            border: 1px solid #2d2d35;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .card h3 {
+            color: #00d2d3;
+            margin: 15px 0 5px 0;
+        }
+        .card p {
+            padding: 0 15px;
+            color: #cccccc;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* تنسيق نموذج التواصل */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #cccccc;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #2d2d35;
+            background-color: #121214;
+            color: #fff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .btn-submit {
+            width: 100%;
+            background-color: #00d2d3;
+            color: #121214;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background-color: #01a3a4;
+        }
+
+        /* شريط التوثيق السفلي (الحقوق والاسم) */
+        footer {
+            background-color: #1a1a1e;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 16px;
+            font-weight: bold;
+            border-top: 2px solid #00d2d3;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            z-index: 1000;
+        }
+        footer span {
+            color: #00d2d3;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#devices">الأجهزة والإلكترونيات</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <div id="home" class="hero">
+        <h1>مرحباً بكم في عالم الإلكترونيات والتقنية</h1>
+        <p>دليلك الشامل لأحدث الأجهزة، مواصفاتها، وتقنيات المستقبل الرقمي.</p>
+        <a href="#devices" class="btn-explore">استكشف الأجهزة الآن</a>
+    </div>
+
+    <div id="devices" class="section">
+        <h2>أبرز الأجهزة الإلكترونية الحديثة</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=500" alt="كمبيوتر محمول">
+                <h3>الحواسب المحمولة (Laptops)</h3>
+                <p>تعتبر الأداة الأساسية للإنتاجية، الدراسة، والبرمجة. تتميز الأجهزة الحديثة بمعالجات قوية ونحافة عالية لتسهيل العمل من أي مكان.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500" alt="منصة ألعاب">
+                <h3>منصات الألعاب المنزلية (Consoles)</h3>
+                <p>تطورت منصات الألعاب لتمنح اللاعبين تجارب واقعية بفضل تقنيات تتبع الأشعة وسرعات المعالجة الفائقة بفضل أقراص التخزين الحديثة.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="هاتف ذكي">
+                <h3>الهواتف الذكية (Smartphones)</h3>
+                <p>قوة حاسوبية كاملة في جيبك. تستخدم في التواصل، التصوير الاحترافي، وإدارة المهام اليومية مدعومة بتقنيات الذكاء الاصطناعي المتقدمة.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>يسعدنا تواصلك معنا</h2>
+        <form onsubmit="alert('تم استلام رسالتك بنجاح! شكراً لك.'); return false;">
+            <div class="form-group">
+                <label for="name">الاسم الكريم:</label>
+                <input type="text" id="name" required placeholder="اكتب اسمك هنا">
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" required placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">رسالتك الموجهة لنا:</label>
+                <textarea id="message" rows="4" required placeholder="اكتب استفسارك أو رأيك في الموقع..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">إرسال الرسالة</button>
+        </form>
+    </div>
+
+    <footer>
+        عمل الطالب: <span>عثمان محمد عثمان عبدون</span> | مشروع مادة المهارات الرقمية النهائي © 2026
+    </footer>
+
+</body>
+</html>
